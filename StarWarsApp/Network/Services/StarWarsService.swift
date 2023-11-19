@@ -10,8 +10,8 @@ import Foundation
 import Foundation
 
 protocol StarWarsServiceProtocol {
-    func getFilms(endPoint: StarWarsEndPoint, completion: @escaping (Result<[Film], NetworkError>) -> Void)
-    func getFilm(endPoint: StarWarsEndPoint, completion: @escaping (Result<Film, NetworkError>) -> Void)
+    func getFilms(endPoint: StarWarsEndPoint, completion: @escaping (Result<Movies, NetworkError>) -> Void)
+    func getFilm(endPoint: StarWarsEndPoint, completion: @escaping (Result<Movie, NetworkError>) -> Void)
 }
 
 final class StarWarsService: StarWarsServiceProtocol {
@@ -21,14 +21,14 @@ final class StarWarsService: StarWarsServiceProtocol {
         self.service = service
     }
 
-    func getFilms(endPoint: StarWarsEndPoint, completion: @escaping (Result<[Film], NetworkError>) -> Void) {
-        service.fetch(endPoint: endPoint) { (result: Result<[Film], NetworkError>) in
+    func getFilms(endPoint: StarWarsEndPoint, completion: @escaping (Result<Movies, NetworkError>) -> Void) {
+        service.fetch(endPoint: endPoint) { (result: Result<Movies, NetworkError>) in
             completion(result)
         }
     }
     
-    func getFilm(endPoint: StarWarsEndPoint, completion: @escaping (Result<Film, NetworkError>) -> Void) {
-        service.fetch(endPoint: endPoint) { (result: Result<Film, NetworkError>) in
+    func getFilm(endPoint: StarWarsEndPoint, completion: @escaping (Result<Movie, NetworkError>) -> Void) {
+        service.fetch(endPoint: endPoint) { (result: Result<Movie, NetworkError>) in
             completion(result)
         }
     }

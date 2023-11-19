@@ -45,7 +45,6 @@ final class Service: ServiceProtocol {
                 do {
                     let decoder = JSONDecoder()
                     decoder.dateDecodingStrategy = .iso8601
-                    print(response)
                     let decodedData = try decoder.decode(T.self, from: data)
                     completion(.success(decodedData))
                 }

@@ -2,7 +2,7 @@ import SwiftUI
 
 struct CrawlTextView: View {
     var movie: Movie
-    var animationDuration = 20.0
+    var animationDuration = 55.0
     @State private var offset: CGFloat = 1000
 
     var body: some View {

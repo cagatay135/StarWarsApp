@@ -60,11 +60,11 @@ struct DetailView: View {
                           .scaleEffect(crawlTitleScale)
                           .onAppear {
                               DispatchQueue.main.asyncAfter(deadline: .now() + 0.1) {
-                                  withAnimation(.easeInOut(duration: 1)) {
+                                  withAnimation(.easeInOut(duration: 10)) {
                                       crawlTitleScale = 0.0
                                   }
                               }
-                              DispatchQueue.main.asyncAfter(deadline: .now() + 1.5) {
+                              DispatchQueue.main.asyncAfter(deadline: .now() + 10.5) {
                                     showNewText = true
                               }
                           }

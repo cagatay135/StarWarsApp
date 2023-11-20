@@ -8,29 +8,24 @@
 import SwiftUI
 
 struct ContentView: View {
-    @StateObject var movieViewModel = MovieViewModel()
-        
     var body: some View {
-        NavigationView {
-                if movieViewModel.movies != nil {
-                    List(movieViewModel.movies!, id: \.title) { movie in
-                        NavigationLink(destination: DetailView(movie: movie)) {
-                            Text(movie.title)
-                        }
-                    }
-                    .navigationBarTitle("Star Wars Movies")
-                } else {
-                    LoadingView()
-                }
-        }
-        .onAppear {
-            movieViewModel.getFilms()
+        NavigationStack {
+            MovieListView()
+            .navigationTitle("Star Wars Movies")
+            /*
+            .toolbarColorScheme(.dark, for: .navigationBar)
+            .toolbarBackground(
+                Color.black,
+                for: .navigationBar)
+            .toolbarBackground(.visible, for: .navigationBar)
+             */
         }
     }
 }
 
+
 struct ContentView_Previews: PreviewProvider {
-    static var previews: some View {
-        ContentView()
-    }
+  static var previews: some View {
+    ContentView()
+  }
 }

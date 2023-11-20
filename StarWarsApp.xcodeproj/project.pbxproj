@@ -23,6 +23,7 @@
 		5E48BD782B056B4600108DF0 /* NetworkError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E48BD772B056B4600108DF0 /* NetworkError.swift */; };
 		5E6E28E42B07B187007E89A0 /* MovieViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E6E28E32B07B187007E89A0 /* MovieViewModel.swift */; };
 		5E85D7D72B0AA3EE00B6E74B /* star-wars.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 5E85D7D62B0AA3EE00B6E74B /* star-wars.mp3 */; };
+		5E85D7D92B0AA87200B6E74B /* MovieListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E85D7D82B0AA87200B6E74B /* MovieListView.swift */; };
 		5EE4C5C32B08F2CF00A88266 /* CrawlTextView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5EE4C5C22B08F2CF00A88266 /* CrawlTextView.swift */; };
 		5EFDFBD22B06D6E500EB5D5A /* DetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5EFDFBD12B06D6E500EB5D5A /* DetailView.swift */; };
 		5EFDFBD42B06D85200EB5D5A /* Movies.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5EFDFBD32B06D85200EB5D5A /* Movies.swift */; };
@@ -46,6 +47,7 @@
 		5E48BD772B056B4600108DF0 /* NetworkError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkError.swift; sourceTree = "<group>"; };
 		5E6E28E32B07B187007E89A0 /* MovieViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieViewModel.swift; sourceTree = "<group>"; };
 		5E85D7D62B0AA3EE00B6E74B /* star-wars.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "star-wars.mp3"; sourceTree = "<group>"; };
+		5E85D7D82B0AA87200B6E74B /* MovieListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieListView.swift; sourceTree = "<group>"; };
 		5EE4C5C22B08F2CF00A88266 /* CrawlTextView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CrawlTextView.swift; sourceTree = "<group>"; };
 		5EFDFBD12B06D6E500EB5D5A /* DetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailView.swift; sourceTree = "<group>"; };
 		5EFDFBD32B06D85200EB5D5A /* Movies.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Movies.swift; sourceTree = "<group>"; };
@@ -161,6 +163,7 @@
 				5EFDFBD12B06D6E500EB5D5A /* DetailView.swift */,
 				5E36791F2B07DF5A0026049C /* LoadingView.swift */,
 				5EE4C5C22B08F2CF00A88266 /* CrawlTextView.swift */,
+				5E85D7D82B0AA87200B6E74B /* MovieListView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -263,6 +266,7 @@
 				5E48BD6C2B05669100108DF0 /* Movie.swift in Sources */,
 				5E48BD762B056ADB00108DF0 /* HttpClient.swift in Sources */,
 				5EFDFBD22B06D6E500EB5D5A /* DetailView.swift in Sources */,
+				5E85D7D92B0AA87200B6E74B /* MovieListView.swift in Sources */,
 				5E48BD722B056A0C00108DF0 /* Endpoint.swift in Sources */,
 				5E48BD662B05625E00108DF0 /* StarWarsService.swift in Sources */,
 				5E48BD742B056A8300108DF0 /* RequestMethod.swift in Sources */,
@@ -408,8 +412,8 @@
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UIStatusBarStyle = UIStatusBarStyleDarkContent;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -438,8 +442,8 @@
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UIStatusBarStyle = UIStatusBarStyleDarkContent;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",

@@ -9,7 +9,7 @@ import SwiftUI
 
 struct LoadingView: View {
     var body: some View {
-        ZStack {            
+        ZStack {
             ProgressView()
                 .progressViewStyle(CircularProgressViewStyle(tint: .gray))
                 .scaleEffect(2)

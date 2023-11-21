@@ -14,7 +14,6 @@ enum NetworkError: Error {
     case unauthorized
     case unexpectedStatusCode
     case unknown
-    
     var customMessage: String {
         switch self {
         case .decode:

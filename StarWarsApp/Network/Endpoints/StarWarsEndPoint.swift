@@ -21,21 +21,18 @@ extension StarWarsEndPoint: Endpoint {
             return "/api/films/\(id)"
         }
     }
-
     var method: RequestMethod {
         switch self {
         case .getFilms, .getFilm:
             return .get
         }
     }
-    
     var body: [String: String]? {
         switch self {
         case .getFilms, .getFilm:
             return nil
         }
     }
-    
     var header: [String : String]? {
         switch self {
         case .getFilms, .getFilm:

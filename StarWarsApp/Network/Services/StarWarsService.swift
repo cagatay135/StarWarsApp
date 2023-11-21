@@ -7,8 +7,6 @@
 
 import Foundation
 
-import Foundation
-
 protocol StarWarsServiceProtocol {
     func getFilms(endPoint: StarWarsEndPoint, completion: @escaping (Result<Movies, NetworkError>) -> Void)
     func getFilm(endPoint: StarWarsEndPoint, completion: @escaping (Result<Movie, NetworkError>) -> Void)
@@ -16,7 +14,6 @@ protocol StarWarsServiceProtocol {
 
 final class StarWarsService: StarWarsServiceProtocol {
     private let service: ServiceProtocol
-    
     init(service: ServiceProtocol) {
         self.service = service
     }
@@ -26,7 +23,6 @@ final class StarWarsService: StarWarsServiceProtocol {
             completion(result)
         }
     }
-    
     func getFilm(endPoint: StarWarsEndPoint, completion: @escaping (Result<Movie, NetworkError>) -> Void) {
         service.fetch(endPoint: endPoint) { (result: Result<Movie, NetworkError>) in
             completion(result)

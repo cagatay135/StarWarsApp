@@ -7,13 +7,11 @@
 
 import Foundation
 
-class MovieViewModel: ObservableObject{
+class MovieViewModel: ObservableObject {
     @Published var movies: [Movie]?
 
     static let service = Service()
     private let starWarsService = StarWarsService(service: service)
-    
-        
     func getFilms() {
         starWarsService.getFilms(endPoint: .getFilms) { result in
             switch result {
@@ -25,5 +23,4 @@ class MovieViewModel: ObservableObject{
             }
         }
     }
-    
 }

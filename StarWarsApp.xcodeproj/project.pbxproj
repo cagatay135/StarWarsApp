@@ -21,11 +21,13 @@
 		5E48BD742B056A8300108DF0 /* RequestMethod.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E48BD732B056A8300108DF0 /* RequestMethod.swift */; };
 		5E48BD762B056ADB00108DF0 /* HttpClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E48BD752B056ADB00108DF0 /* HttpClient.swift */; };
 		5E48BD782B056B4600108DF0 /* NetworkError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E48BD772B056B4600108DF0 /* NetworkError.swift */; };
+		5E4D0F882B0BF555002B2EB7 /* LogoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E4D0F872B0BF555002B2EB7 /* LogoView.swift */; };
+		5E4D0F8C2B0BF819002B2EB7 /* GlowBorder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E4D0F8B2B0BF819002B2EB7 /* GlowBorder.swift */; };
 		5E6E28E42B07B187007E89A0 /* MovieViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E6E28E32B07B187007E89A0 /* MovieViewModel.swift */; };
 		5E85D7D72B0AA3EE00B6E74B /* star-wars.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 5E85D7D62B0AA3EE00B6E74B /* star-wars.mp3 */; };
 		5E85D7D92B0AA87200B6E74B /* MovieListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E85D7D82B0AA87200B6E74B /* MovieListView.swift */; };
 		5EE4C5C32B08F2CF00A88266 /* CrawlTextView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5EE4C5C22B08F2CF00A88266 /* CrawlTextView.swift */; };
-		5EFDFBD22B06D6E500EB5D5A /* DetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5EFDFBD12B06D6E500EB5D5A /* DetailView.swift */; };
+		5EFDFBD22B06D6E500EB5D5A /* CrawlAnimationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5EFDFBD12B06D6E500EB5D5A /* CrawlAnimationView.swift */; };
 		5EFDFBD42B06D85200EB5D5A /* Movies.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5EFDFBD32B06D85200EB5D5A /* Movies.swift */; };
 /* End PBXBuildFile section */
 
@@ -45,11 +47,13 @@
 		5E48BD732B056A8300108DF0 /* RequestMethod.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RequestMethod.swift; sourceTree = "<group>"; };
 		5E48BD752B056ADB00108DF0 /* HttpClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HttpClient.swift; sourceTree = "<group>"; };
 		5E48BD772B056B4600108DF0 /* NetworkError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkError.swift; sourceTree = "<group>"; };
+		5E4D0F872B0BF555002B2EB7 /* LogoView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LogoView.swift; sourceTree = "<group>"; };
+		5E4D0F8B2B0BF819002B2EB7 /* GlowBorder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GlowBorder.swift; sourceTree = "<group>"; };
 		5E6E28E32B07B187007E89A0 /* MovieViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieViewModel.swift; sourceTree = "<group>"; };
 		5E85D7D62B0AA3EE00B6E74B /* star-wars.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "star-wars.mp3"; sourceTree = "<group>"; };
 		5E85D7D82B0AA87200B6E74B /* MovieListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieListView.swift; sourceTree = "<group>"; };
 		5EE4C5C22B08F2CF00A88266 /* CrawlTextView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CrawlTextView.swift; sourceTree = "<group>"; };
-		5EFDFBD12B06D6E500EB5D5A /* DetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailView.swift; sourceTree = "<group>"; };
+		5EFDFBD12B06D6E500EB5D5A /* CrawlAnimationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CrawlAnimationView.swift; sourceTree = "<group>"; };
 		5EFDFBD32B06D85200EB5D5A /* Movies.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Movies.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -160,10 +164,12 @@
 		5E48BD6A2B05653500108DF0 /* Views */ = {
 			isa = PBXGroup;
 			children = (
-				5EFDFBD12B06D6E500EB5D5A /* DetailView.swift */,
+				5EFDFBD12B06D6E500EB5D5A /* CrawlAnimationView.swift */,
 				5E36791F2B07DF5A0026049C /* LoadingView.swift */,
 				5EE4C5C22B08F2CF00A88266 /* CrawlTextView.swift */,
+				5E4D0F872B0BF555002B2EB7 /* LogoView.swift */,
 				5E85D7D82B0AA87200B6E74B /* MovieListView.swift */,
+				5E4D0F8B2B0BF819002B2EB7 /* GlowBorder.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -261,17 +267,19 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5E4D0F882B0BF555002B2EB7 /* LogoView.swift in Sources */,
 				5EFDFBD42B06D85200EB5D5A /* Movies.swift in Sources */,
 				5E48BD592B05617900108DF0 /* ContentView.swift in Sources */,
 				5E48BD6C2B05669100108DF0 /* Movie.swift in Sources */,
 				5E48BD762B056ADB00108DF0 /* HttpClient.swift in Sources */,
-				5EFDFBD22B06D6E500EB5D5A /* DetailView.swift in Sources */,
+				5EFDFBD22B06D6E500EB5D5A /* CrawlAnimationView.swift in Sources */,
 				5E85D7D92B0AA87200B6E74B /* MovieListView.swift in Sources */,
 				5E48BD722B056A0C00108DF0 /* Endpoint.swift in Sources */,
 				5E48BD662B05625E00108DF0 /* StarWarsService.swift in Sources */,
 				5E48BD742B056A8300108DF0 /* RequestMethod.swift in Sources */,
 				5E3679242B07E4D20026049C /* CustomColor.swift in Sources */,
 				5EE4C5C32B08F2CF00A88266 /* CrawlTextView.swift in Sources */,
+				5E4D0F8C2B0BF819002B2EB7 /* GlowBorder.swift in Sources */,
 				5E48BD572B05617900108DF0 /* StarWarsAppApp.swift in Sources */,
 				5E48BD6E2B0568D100108DF0 /* StarWarsEndPoint.swift in Sources */,
 				5E48BD782B056B4600108DF0 /* NetworkError.swift in Sources */,

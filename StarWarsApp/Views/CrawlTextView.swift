@@ -7,7 +7,7 @@ struct CrawlTextView: View {
 
     var body: some View {
         VStack {
-            Text("\(movie.episodeID)\n\(movie.title)\n\n\(movie.openingCrawl)")
+            Text("Episode \(movie.episodeID)\n\(movie.title)\n\n\(movie.openingCrawl)")
                 .font(.custom("Starjedi", size: 30))
                 .foregroundColor(.primaryYellow)
                 .multilineTextAlignment(.center)

@@ -14,7 +14,7 @@ struct MovieListView: View {
     ZStack {
       if movieViewModel.movies != nil {
         List(movieViewModel.movies!, id: \.title) { movie in
-          NavigationLink(destination: DetailView(movie: movie)) {
+          NavigationLink(destination: CrawlAnimationView(movie: movie)) {
             Text(movie.title)
           }
         }
